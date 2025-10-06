@@ -1,6 +1,6 @@
 import { supabase } from "../supabaseClient"; // Assuming this path exists and is correct
 
-const BASE_URL = "http://localhost:3001/api";
+const BASE_URL = import.meta.env.VITE_API_URL;
 
 /**
  * Custom fetch wrapper to securely communicate with the Express backend.
