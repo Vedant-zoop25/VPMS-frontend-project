@@ -14,6 +14,7 @@ const Login = ({ setAuth, setRole }) => {
 
     // --- Supabase Sign In (Authentication) ---
     // NOTE: Supabase client automatically persists the JWT token, 
+  
     const { error } = await supabase.auth.signInWithPassword({
       email,
       password,
